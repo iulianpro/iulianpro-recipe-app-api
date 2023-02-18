@@ -1,10 +1,7 @@
 ---
 name: Checks
 
-on:
-  push:
-    paths-ignore:
-      - ".env"
+on: [push]
 
 jobs:
   test-lint:
