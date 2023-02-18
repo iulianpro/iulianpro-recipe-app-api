@@ -20,7 +20,7 @@ jobs:
         env:
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_USER: ${{ secrets.DB_USER }}
-          DB_NADB_PASSME: ${{ secrets.DB_PASS }}
+          DB_PASS: ${{ secrets.DB_PASS }}
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
       - name: Linting
         run: docker-compose run --rm app sh -c "flake8"
